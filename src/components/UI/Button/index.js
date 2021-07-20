@@ -12,6 +12,7 @@ const ButtonLoader = () => (
 const Button = React.forwardRef(({
     children,
     variant,
+    round,
     size,
     disabled,
     onClick,
@@ -32,6 +33,7 @@ const Button = React.forwardRef(({
             size={size}
             onClick={handleClick}
             ref={ref}
+            round={round}
         >
             {isLoading ? 
             <ButtonLoader />
@@ -49,6 +51,7 @@ Button.defaultProps={
     size:'lg',
     disabled: false,
     isLoading: false,
+    round: true,
     onClick: () => {},
 }
 
