@@ -1,4 +1,5 @@
 import * as React from "react"
+import Hero from "../components/Hero"
 import Layout from "../components/Layout"
 
 import Seo from "../components/seo"
@@ -6,8 +7,7 @@ import Seo from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
+    <Hero />
     
   </Layout>
 )
