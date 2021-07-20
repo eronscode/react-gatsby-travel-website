@@ -1,5 +1,5 @@
 import React from "react"
-import Button from "../UI/Button"
+import Button from "@components/UI/Button"
 import {
   HeroBg,
   HeroContainer,
@@ -8,7 +8,7 @@ import {
   HeroItems,
 } from "./styles"
 
-import Video from '../../assets/videos/travel1.mp4'
+import Video from '@assets/videos/travel1.mp4'
 
 function Hero() {
   return (

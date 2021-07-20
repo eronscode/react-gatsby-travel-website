@@ -1,7 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import Header from "../Header"
-import {GlobalStyles } from "../../utils/styles/globalStyles"
+import {GlobalStyles } from "@utils/styles/globalStyles"
 
 const defaultProps = {}
 

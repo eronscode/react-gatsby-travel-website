@@ -4,4 +4,17 @@
  * See: https://www.gatsbyjs.com/docs/node-apis/
  */
 
-// You can delete this file if you're not using it
+ const path = require("path");
+
+ exports.onCreateWebpackConfig = ({ actions }) => {
+   actions.setWebpackConfig({
+     resolve: {
+       alias: {
+         "@components": path.resolve(__dirname, "src/components"),
+         "@assets": path.resolve(__dirname, "src/assets"),
+         "@utils": path.resolve(__dirname, "src/utils"),
+         "@static": path.resolve(__dirname, "static")
+       }
+     }
+   });
+ }

@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components"
 
-import { color, font, mixin } from "../../../utils/styles/styles"
+import { color, font, mixin } from "@utils/styles/styles"
 
 const StyledButton = styled.button`
   display: inline-block;
