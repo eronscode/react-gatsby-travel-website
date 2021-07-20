@@ -1,21 +1,27 @@
-import React from 'react'
+import React from "react"
 import PropTypes from "prop-types"
-const defaultProps = {
+import { Nav, Navlink, MenuIcon, NavMenu } from "./styles"
+import { menuData } from "../../data/MenuData"
 
-}
+const defaultProps = {}
 
-const propTypes = {
-    
-}
+const propTypes = {}
 
 function Header() {
-    return (
-        <div>
-            
-        </div>
-    )
+  return (
+    <Nav>
+      <Navlink to="/">EXPERIO</Navlink>
+      <MenuIcon />
+      <NavMenu>
+        {menuData.map(item => (
+          <Navlink to={item.link} key={item.title}>
+            {item.title}
+          </Navlink>
+        ))}
+      </NavMenu>
+    </Nav>
+  )
 }
-
 
 Header.defaultProps = defaultProps
 Header.propTypes = propTypes
