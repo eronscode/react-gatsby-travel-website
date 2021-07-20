@@ -17,7 +17,7 @@ const StyledButton = styled.button`
   outline: 0;
   min-width:100px;
   ${mixin.clickable}
-  ${font.size(14.5)}
+  ${font.size(12.5)}
   ${props => buttonVariants[props.variant]}
   ${props => buttonSizes[props.size]}
   &:disabled {
@@ -48,9 +48,9 @@ const colored = css`
 
 const buttonSizes = {
   lg: css`
-    padding: 0.5rem 1rem !important;
-    font-size: 1.25rem !important;
-    line-height: 1.5 !important;
+    padding: 0.7rem 1.2rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
     border-radius: 0.3rem;
   `,
   md: css`
