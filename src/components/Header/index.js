@@ -1,7 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Nav, Navlink, MenuIcon, NavMenu } from "./styles"
+import { Nav, Navlink, MenuIcon, NavMenu, NavBtn } from "./styles"
 import { menuData } from "../../data/MenuData"
+import Button from "../../components/UI/Button"
 
 const defaultProps = {}
 
@@ -19,6 +20,9 @@ function Header() {
           </Navlink>
         ))}
       </NavMenu>
+      <NavBtn>
+          <Button>Nice</Button>
+      </NavBtn>
     </Nav>
   )
 }
